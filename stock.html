@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+<html lang="en" class="no-js">
+<![endif]-->
+<html lang="en">
+<head>
+    <title>Simple Stock Exchange</title>
+    <meta charset="UTF-8">
+    
+    <link href=" style.css " rel="stylesheet" type= "text/css">
+    <script src="jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="stockdata.js"></script>
+</head>
+<body>
+    
+    <header>
+           <div id= "header">
+                <h1>Simple Stock Exchange</h1> 
+            </div>
+            <br>
+            <div id= "search">
+                <form>
+                    <input type="text" name="search" id="symbol" placeholder="Enter Symbol">
+                    <input type="button" id= "lookup" value="Lookup"></button>
+                </form>
+            </div>
+    </header>
+
+<div id="parallel">
+    <div id="buyOrSell">
+        <div id="resultTable"> </div>
+        <br><br>
+        <form>
+            <input type="text" name="quantity" id= "quantity" placeholder="Enter Quantity">
+            <button type="button" id="buy">Buy</button>
+            <button type="button" id="sell" onclick="">Sell</button>
+        </form>
+    </div>
+
+    <div id="portfolio">
+    <h3 align='center'> Current Portfolio </h3>
+        <div id="cash">
+        <h4 align='right'><b>Cash:</b>$100,000</h4>
+        </div>
+            <div id= "currentStock">
+                You don't have a Portfolio yet!
+            </div>
+            <div id= "custStock">
+            <table> </table>
+            </div>
+                <br>
+    </div>   
+</div>
+
+
+
+</body>
+</html>
