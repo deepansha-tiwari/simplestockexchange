@@ -14,7 +14,7 @@ $( document ).ready(function() {
 		
 		//ajax call to the API
 		$.ajax ({
-			url: "https://data.benzinga.com/rest/richquoteDelayed",
+			url: "http://data.benzinga.com/rest/richquoteDelayed",
 			method: 'get',
 			data: {symbols: symbol},
 			dataType: 'jsonp',
